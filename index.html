@@ -1,36 +1,146 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Geräteverleih Nord-West</title>
-<style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f7f8;color:#172129;font-family:Arial,Helvetica,sans-serif}
-.header{background:#fff}.head{width:min(1400px,calc(100% - 48px));margin:auto;height:190px;display:grid;grid-template-columns:470px 1fr 205px;gap:14px;align-items:center;overflow:hidden}
-.brand{height:145px;overflow:hidden}.brand img{width:100%;height:100%;object-fit:cover;object-position:left center;display:block}
-.cats{height:104px;display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid #d5dadd}.cats a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:#172129;text-decoration:none;border-right:1px solid #d5dadd}.cats span{font-size:30px}.cats b{font-size:14px}
-.slogan{text-align:center;color:#648b42;font:italic 20px/1.1 cursive;transform:rotate(-3deg)}.slogan span{display:block}
-.nav{width:min(1400px,calc(100% - 48px));margin:auto;height:72px;background:#101d23;display:flex;overflow:hidden}.nav a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;text-decoration:none;white-space:nowrap;font-size:15px}.nav a.active{background:#51ad2e}
-.hero{min-height:540px;color:#fff;background:linear-gradient(90deg,rgba(5,18,24,.86),rgba(5,18,24,.55) 48%,rgba(5,18,24,.12)),url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2200&q=85") center/cover}.hero-inner{width:min(1400px,calc(100% - 48px));margin:auto;padding:70px 0}.copy{max-width:800px}.eyebrow{color:#59b634;font-weight:800;letter-spacing:1.4px;margin-bottom:20px}h1{font-size:clamp(50px,6vw,82px);line-height:.98;letter-spacing:-2px;margin:0 0 24px}.hero p{font-size:21px;line-height:1.45;max-width:760px;margin:0 0 28px}.cta{display:inline-block;background:#51ad2e;color:white;text-decoration:none;font-weight:800;padding:18px 27px;border-radius:6px}.benefits{display:flex;gap:44px;margin-top:48px}.benefits div{display:flex;gap:10px;font-size:22px}.benefits b,.benefits small{display:block}.benefits b{font-size:16px}.benefits small{font-size:14px;opacity:.8;margin-top:4px}
-.search{background:#fff;padding-bottom:70px}.search-inner{width:min(1400px,calc(100% - 48px));margin:auto}.searchbox{margin-top:-28px;background:white;border:1px solid #dfe4e7;border-radius:10px;box-shadow:0 10px 28px #0002;padding:16px;display:grid;grid-template-columns:1.25fr 1fr .85fr .8fr;gap:12px}.searchbox input,.searchbox select,.searchbox button{height:54px;border-radius:6px;font-size:15px}.searchbox input,.searchbox select{border:1px solid #d5dade;padding:0 15px}.searchbox button{border:0;background:#51ad2e;color:#fff;font-weight:800}.search h2{font-size:32px;margin:54px 0 22px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.card{background:#fff;border:1px solid #e0e5e7;border-radius:10px;overflow:hidden;padding-bottom:20px}.device{height:180px;background:#edf1f2;display:flex;align-items:center;justify-content:center;font-size:25px;font-weight:900;color:#526069}.card h3{margin:20px;font-size:19px}.card p{margin:-10px 20px 6px;color:#51ad2e;font-weight:800}.card small{margin:0 20px;color:#6c767c}.info{background:#101d23;color:#fff;padding:55px 24px}.info>div{width:min(1400px,100%);margin:auto}footer{background:#091318;color:#fff;padding:28px 24px}
-@media(max-width:1050px){.head{grid-template-columns:350px 1fr;height:155px}.brand{height:120px}.slogan{display:none}.nav{width:100%}.nav a{font-size:13px}.cards{grid-template-columns:repeat(2,1fr)}.searchbox{grid-template-columns:1fr 1fr}}
-@media(max-width:650px){.head{display:block;height:auto;padding:8px 12px}.brand{height:90px;width:100%}.cats{height:72px}.cats span{font-size:21px}.cats b{font-size:11px}.nav{overflow:auto}.nav a{flex:0 0 auto;padding:0 15px}.hero{min-height:570px}.hero-inner{padding:50px 12px}.hero p{font-size:18px}.benefits{flex-direction:column;gap:14px}.search-inner{width:calc(100% - 24px)}.searchbox{grid-template-columns:1fr}.cards{grid-template-columns:1fr}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Geräteverleih Nord-West – hochwertige Geräte, Anhänger und Gartentechnik regional mieten.">
+  <title>Geräteverleih Nord-West | Regional. Zuverlässig. Flexibel.</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-<div class="head">
-<div class="brand"><img src="brand.jpg" alt="Geräteverleih Nord-West"></div>
-<div class="cats">
-<a href="#geraete"><span>⚒</span><b>Baugeräte</b></a><a href="#geraete"><span>◒</span><b>Gartengeräte</b></a><a href="#anhaenger"><span>▱</span><b>Anhänger</b></a><a href="#geraete"><span>▣</span><b>Und mehr</b></a>
-</div>
-<div class="slogan"><span>Starke Projekte.</span><span>Starke Region.</span></div>
-</div>
-<nav class="nav"><a class="active" href="#start">⌂ <b>Startseite</b></a><a href="#geraete">⌕ <b>Geräte mieten</b></a><a href="#so-funktionierts">⚙ <b>So funktioniert's</b></a><a href="#ueber-uns">♙ <b>Über uns</b></a><a href="#faq">? <b>FAQ</b></a><a href="#kontakt">✉ <b>Kontakt</b></a><a href="#konto">♙ <b>Konto</b></a><a href="#warenkorb">🛒 <b>0</b></a></nav>
+<header class="site-header">
+  <div class="brand-row">
+    <a class="brand" href="#start" aria-label="Geräteverleih Nord-West Startseite">
+      <img src="assets/logo.jpeg" alt="Geräteverleih Nord-West">
+    </a>
+    <nav class="category-nav" aria-label="Kategorien">
+      <a href="#geraete">⚒ <span>Baugeräte</span></a>
+      <a href="#geraete">◒ <span>Gartengeräte</span></a>
+      <a href="#anhaenger">▱ <span>Anhänger</span></a>
+      <a href="#geraete">▣ <span>Und mehr</span></a>
+    </nav>
+  </div>
+  <nav class="main-nav" aria-label="Hauptnavigation">
+    <a class="active" href="#start">⌂ Startseite</a>
+    <a href="#geraete">⌕ Geräte mieten</a>
+    <a href="#ablauf">⚙ So funktioniert's</a>
+    <a href="#ueber-uns">♟ Über uns</a>
+    <a href="#faq">? FAQ</a>
+    <a href="#kontakt">✉ Kontakt</a>
+    <div class="nav-spacer"></div>
+    <button class="nav-link" id="accountBtn">♙ Konto</button>
+    <button class="cart-btn" id="cartBtn" aria-label="Warenkorb">🛒 <b id="cartCount">0</b></button>
+  </nav>
 </header>
+
 <main id="start">
-<section class="hero"><div class="hero-inner"><div class="copy"><div class="eyebrow">GERÄTEVERLEIH NORD-WEST</div><h1>Starke Projekte.<br>Starke Region.</h1><p>Hochwertige Geräte für Bau, Garten und mehr – einfach online mieten. Regional. Zuverlässig. Flexibel.</p><a class="cta" href="#geraete">JETZT GERÄTE MIETEN →</a><div class="benefits"><div>▣ <span><b>Regionale Abholung</b><small>Schnell & unkompliziert</small></span></div><div>✓ <span><b>Faire Preise</b><small>Transparent & ehrlich</small></span></div><div>▦ <span><b>Flexibel mieten</b><small>Für Profis & Privatkunden</small></span></div></div></div></div></section>
-<section class="search" id="geraete"><div class="search-inner"><div class="searchbox"><input placeholder="Gerät suchen …"><select><option>Alle Kategorien</option><option>Baugeräte</option><option>Gartengeräte</option><option>Anhänger</option></select><input type="date"><button>GERÄTE FINDEN</button></div><h2>Beliebte Geräte</h2><div class="cards"><article class="card"><div class="device">MAKITA</div><h3>Makita Akku-Schlagschrauber</h3><p>Ab 15 € / Tag</p><small>Kaution: 100 €</small></article><article class="card"><div class="device">MAKITA</div><h3>Makita Schlitzfräse</h3><p>Ab 25 € / Tag</p><small>Kaution: 150 €</small></article><article class="card" id="anhaenger"><div class="device">750 KG</div><h3>750-kg-Anhänger</h3><p>Ab 20 € / Tag</p><small>Kaution: 100 €</small></article><article class="card"><div class="device">RÜTTELPLATTE</div><h3>Rüttelplatte</h3><p>Ab 25 € / Tag</p><small>Kaution: 150 €</small></article></div></div></section>
-<section class="info" id="so-funktionierts"><div><h2>Einfach mieten. Klar geregelt.</h2><p>Gerät auswählen, Zeitraum wählen und regional abholen.</p></div></section>
-</main><footer id="kontakt">Geräteverleih Nord-West · Regional. Zuverlässig. Flexibel.</footer>
-</body></html>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">GERÄTEVERLEIH NORD-WEST</p>
+      <h1>Starke Projekte.<br>Starke Region.</h1>
+      <p class="hero-copy">Hochwertige Geräte für Bau, Garten und mehr – einfach online mieten. Regional. Zuverlässig. Flexibel.</p>
+      <a class="btn btn-primary" href="#geraete">JETZT GERÄTE MIETEN →</a>
+      <div class="trust-row">
+        <span>▣ <strong>Regionale Abholung</strong><small>Schnell & unkompliziert</small></span>
+        <span>✓ <strong>Faire Preise</strong><small>Transparent & ehrlich</small></span>
+        <span>▦ <strong>Flexibel mieten</strong><small>Für Profis & Privatkunden</small></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="search-panel" aria-label="Gerätesuche">
+    <label>Gerät suchen
+      <input id="searchInput" type="search" placeholder="z. B. Akkuschrauber, Anhänger, Rüttelplatte …">
+    </label>
+    <label>Kategorie
+      <select id="categorySelect">
+        <option value="all">Alle Kategorien</option>
+        <option value="bau">Baugeräte</option>
+        <option value="garten">Gartengeräte</option>
+        <option value="anhaenger">Anhänger</option>
+      </select>
+    </label>
+    <label>Zeitraum
+      <input id="dateInput" type="date">
+    </label>
+    <button class="btn btn-primary search-btn" id="searchBtn">GERÄTE FINDEN →</button>
+  </section>
+
+  <section class="section" id="geraete">
+    <div class="section-head">
+      <h2>Beliebte Geräte</h2>
+      <a href="#geraete" id="showAll">Alle Geräte anzeigen →</a>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+    <p class="empty-state" id="emptyState" hidden>Keine passenden Geräte gefunden.</p>
+  </section>
+
+  <section class="feature-strip">
+    <div><b>⌖ Regional für Sie da</b><span>Schnelle Abholung & persönliche Beratung</span></div>
+    <div><b>🤝 Einfache Online-Reservierung</b><span>In wenigen Schritten zum Wunschgerät</span></div>
+    <div><b>✓ Sichere Abwicklung</b><span>Transparente Preise & faire Kautionen</span></div>
+    <div><b>♟ Für Profis & Privatkunden</b><span>Vom Heimwerker bis zum Unternehmen</span></div>
+  </section>
+
+  <section class="section split" id="ablauf">
+    <div>
+      <p class="eyebrow">SO FUNKTIONIERT'S</p>
+      <h2>In wenigen Schritten zum Gerät.</h2>
+      <p>Gerät auswählen, Zeitraum festlegen, Kundendaten bestätigen und Reservierung abschließen. Die Abholung erfolgt regional und persönlich.</p>
+    </div>
+    <ol class="steps">
+      <li><b>01</b><span>Gerät auswählen</span></li>
+      <li><b>02</b><span>Zeitraum festlegen</span></li>
+      <li><b>03</b><span>Konto & Identität</span></li>
+      <li><b>04</b><span>Reservierung bestätigen</span></li>
+    </ol>
+  </section>
+
+  <section class="section about" id="ueber-uns">
+    <div>
+      <p class="eyebrow">ÜBER UNS</p>
+      <h2>Regional. Zuverlässig. Flexibel.</h2>
+      <p>Geräteverleih Nord-West steht für unkomplizierte Vermietung, transparente Preise und persönlichen Service in der Region.</p>
+    </div>
+    <div class="about-card">
+      <strong>Geräteverleih Nord-West</strong>
+      <span>Persönliche Beratung</span>
+      <span>Faire Kautionen</span>
+      <span>Flexible Mietdauer</span>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq">
+    <p class="eyebrow">FAQ</p>
+    <h2>Häufige Fragen</h2>
+    <details><summary>Wie funktioniert die Reservierung?</summary><p>Gerät und Zeitraum auswählen, Anfrage abschicken und die Reservierung nach Bestätigung abschließen.</p></details>
+    <details><summary>Welche Kaution wird fällig?</summary><p>Die Kaution hängt vom jeweiligen Gerät und dessen Wert ab und wird vor der Abholung transparent angezeigt.</p></details>
+    <details><summary>Kann ich Geräte persönlich abholen?</summary><p>Ja. Die Abholung erfolgt regional nach vorheriger Terminvereinbarung.</p></details>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <div>
+      <p class="eyebrow">KONTAKT</p>
+      <h2>Du hast Fragen zu einem Gerät?</h2>
+      <p>Schreib uns – wir helfen dir bei Gerät, Mietdauer und Reservierung.</p>
+    </div>
+    <a class="btn btn-light" href="mailto:info@geraeteverleih-nord-west.de">✉ E-MAIL SCHREIBEN</a>
+  </section>
+</main>
+
+<footer>
+  <div><strong>GERÄTEVERLEIH NORD-WEST</strong><span>Regional. Zuverlässig. Flexibel.</span></div>
+  <div><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#kontakt">Kontakt</a></div>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose" aria-label="Schließen">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
