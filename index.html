@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Geräteverleih Nord-West – hochwertige Geräte, Anhänger und Gartentechnik regional mieten.">
+  <title>Geräteverleih Nord-West | Regional. Zuverlässig. Flexibel.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand-row">
+    <a class="brand" href="#start" aria-label="Geräteverleih Nord-West Startseite">
+      <img src="assets/logo.jpeg" alt="Geräteverleih Nord-West">
+    </a>
+    <nav class="category-nav" aria-label="Kategorien">
+      <a href="#geraete">⚒ <span>Baugeräte</span></a>
+      <a href="#geraete">◒ <span>Gartengeräte</span></a>
+      <a href="#anhaenger">▱ <span>Anhänger</span></a>
+      <a href="#geraete">▣ <span>Und mehr</span></a>
+    </nav>
+  </div>
+  <nav class="main-nav" aria-label="Hauptnavigation">
+    <a class="active" href="#start">⌂ Startseite</a>
+    <a href="#geraete">⌕ Geräte mieten</a>
+    <a href="#ablauf">⚙ So funktioniert's</a>
+    <a href="#ueber-uns">♟ Über uns</a>
+    <a href="#faq">? FAQ</a>
+    <a href="#kontakt">✉ Kontakt</a>
+    <div class="nav-spacer"></div>
+    <button class="nav-link" id="accountBtn">♙ Konto</button>
+    <button class="cart-btn" id="cartBtn" aria-label="Warenkorb">🛒 <b id="cartCount">0</b></button>
+  </nav>
+</header>
+
+<main id="start">
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">GERÄTEVERLEIH NORD-WEST</p>
+      <h1>Starke Projekte.<br>Starke Region.</h1>
+      <p class="hero-copy">Hochwertige Geräte für Bau, Garten und mehr – einfach online mieten. Regional. Zuverlässig. Flexibel.</p>
+      <a class="btn btn-primary" href="#geraete">JETZT GERÄTE MIETEN →</a>
+      <div class="trust-row">
+        <span>▣ <strong>Regionale Abholung</strong><small>Schnell & unkompliziert</small></span>
+        <span>✓ <strong>Faire Preise</strong><small>Transparent & ehrlich</small></span>
+        <span>▦ <strong>Flexibel mieten</strong><small>Für Profis & Privatkunden</small></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="search-panel" aria-label="Gerätesuche">
+    <label>Gerät suchen
+      <input id="searchInput" type="search" placeholder="z. B. Akkuschrauber, Anhänger, Rüttelplatte …">
+    </label>
+    <label>Kategorie
+      <select id="categorySelect">
+        <option value="all">Alle Kategorien</option>
+        <option value="bau">Baugeräte</option>
+        <option value="garten">Gartengeräte</option>
+        <option value="anhaenger">Anhänger</option>
+      </select>
+    </label>
+    <label>Zeitraum
+      <input id="dateInput" type="date">
+    </label>
+    <button class="btn btn-primary search-btn" id="searchBtn">GERÄTE FINDEN →</button>
+  </section>
+
+  <section class="section" id="geraete">
+    <div class="section-head">
+      <h2>Beliebte Geräte</h2>
+      <a href="#geraete" id="showAll">Alle Geräte anzeigen →</a>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+    <p class="empty-state" id="emptyState" hidden>Keine passenden Geräte gefunden.</p>
+  </section>
+
+  <section class="feature-strip">
+    <div><b>⌖ Regional für Sie da</b><span>Schnelle Abholung & persönliche Beratung</span></div>
+    <div><b>🤝 Einfache Online-Reservierung</b><span>In wenigen Schritten zum Wunschgerät</span></div>
+    <div><b>✓ Sichere Abwicklung</b><span>Transparente Preise & faire Kautionen</span></div>
+    <div><b>♟ Für Profis & Privatkunden</b><span>Vom Heimwerker bis zum Unternehmen</span></div>
+  </section>
+
+  <section class="section split" id="ablauf">
+    <div>
+      <p class="eyebrow">SO FUNKTIONIERT'S</p>
+      <h2>In wenigen Schritten zum Gerät.</h2>
+      <p>Gerät auswählen, Zeitraum festlegen, Kundendaten bestätigen und Reservierung abschließen. Die Abholung erfolgt regional und persönlich.</p>
+    </div>
+    <ol class="steps">
+      <li><b>01</b><span>Gerät auswählen</span></li>
+      <li><b>02</b><span>Zeitraum festlegen</span></li>
+      <li><b>03</b><span>Konto & Identität</span></li>
+      <li><b>04</b><span>Reservierung bestätigen</span></li>
+    </ol>
+  </section>
+
+  <section class="section about" id="ueber-uns">
+    <div>
+      <p class="eyebrow">ÜBER UNS</p>
+      <h2>Regional. Zuverlässig. Flexibel.</h2>
+      <p>Geräteverleih Nord-West steht für unkomplizierte Vermietung, transparente Preise und persönlichen Service in der Region.</p>
+    </div>
+    <div class="about-card">
+      <strong>Geräteverleih Nord-West</strong>
+      <span>Persönliche Beratung</span>
+      <span>Faire Kautionen</span>
+      <span>Flexible Mietdauer</span>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq">
+    <p class="eyebrow">FAQ</p>
+    <h2>Häufige Fragen</h2>
+    <details><summary>Wie funktioniert die Reservierung?</summary><p>Gerät und Zeitraum auswählen, Anfrage abschicken und die Reservierung nach Bestätigung abschließen.</p></details>
+    <details><summary>Welche Kaution wird fällig?</summary><p>Die Kaution hängt vom jeweiligen Gerät und dessen Wert ab und wird vor der Abholung transparent angezeigt.</p></details>
+    <details><summary>Kann ich Geräte persönlich abholen?</summary><p>Ja. Die Abholung erfolgt regional nach vorheriger Terminvereinbarung.</p></details>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <div>
+      <p class="eyebrow">KONTAKT</p>
+      <h2>Du hast Fragen zu einem Gerät?</h2>
+      <p>Schreib uns – wir helfen dir bei Gerät, Mietdauer und Reservierung.</p>
+    </div>
+    <a class="btn btn-light" href="mailto:info@geraeteverleih-nord-west.de">✉ E-MAIL SCHREIBEN</a>
+  </section>
+</main>
+
+<footer>
+  <div><strong>GERÄTEVERLEIH NORD-WEST</strong><span>Regional. Zuverlässig. Flexibel.</span></div>
+  <div><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#kontakt">Kontakt</a></div>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose" aria-label="Schließen">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
