@@ -1,12 +1,78 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Geräteverleih Nord-West</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><img class="full-logo" src="logo.jpeg" alt="Geräteverleih Nord-West"><nav><a href="#start">Startseite</a><a href="#geraete">Geräte mieten</a><a href="#ablauf">So funktioniert's</a><a href="#ueber-uns">Über uns</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a><button id="konto">Konto</button><button id="warenkorb">🛒 <span id="count">0</span></button></nav></header>
-<main id="start"><section class="hero"><div><small>GERÄTEVERLEIH NORD-WEST</small><h1>Starke Projekte.<br>Starke Region.</h1><p>Hochwertige Geräte für Bau, Garten und mehr – einfach online mieten.</p><a class="btn" href="#geraete">JETZT GERÄTE MIETEN →</a></div></section>
-<section class="search"><input id="q" placeholder="Gerät suchen …"><select id="cat"><option value="">Alle Kategorien</option><option value="Baugeräte">Baugeräte</option><option value="Gartengeräte">Gartengeräte</option><option value="Anhänger">Anhänger</option></select><button class="btn" id="find">GERÄTE FINDEN →</button></section>
-<section id="geraete" class="section"><div class="head"><h2>Beliebte Geräte</h2></div><div id="grid" class="grid"></div></section>
-<section id="ablauf" class="section light"><small>SO FUNKTIONIERT'S</small><h2>In wenigen Schritten zum Gerät.</h2><div class="steps"><b>01<br><span>Gerät auswählen</span></b><b>02<br><span>Zeitraum festlegen</span></b><b>03<br><span>Konto & Identität</span></b><b>04<br><span>Reservierung bestätigen</span></b></div></section>
-<section id="ueber-uns" class="section"><small>ÜBER UNS</small><h2>Regional. Zuverlässig. Flexibel.</h2><p>Unkomplizierte Vermietung, transparente Preise und persönlicher Service in der Region.</p></section>
-<section id="faq" class="section light"><small>FAQ</small><h2>Häufige Fragen</h2><details><summary>Wie funktioniert die Reservierung?</summary><p>Gerät und Zeitraum auswählen und Reservierung anfragen.</p></details><details><summary>Welche Kaution wird fällig?</summary><p>Die Kaution wird beim jeweiligen Gerät transparent angezeigt.</p></details></section>
-<section id="kontakt" class="contact"><div><small>KONTAKT</small><h2>Fragen zu einem Gerät?</h2><p>Wir helfen bei Gerät, Mietdauer und Reservierung.</p></div><a class="btn white" href="mailto:info@geraeteverleih-nord-west.de">✉ E-MAIL SCHREIBEN</a></section></main>
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geräteverleih Nord-West</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand-header">
+    <a class="brand" href="#start">
+      <img src="assets/brand.jpg" alt="Geräteverleih Nord-West">
+    </a>
+    <div class="header-categories">
+      <a href="#geraete"><span class="icon">⚒</span><span>Baugeräte</span></a>
+      <a href="#geraete"><span class="icon">◒</span><span>Gartengeräte</span></a>
+      <a href="#anhaenger"><span class="icon">▱</span><span>Anhänger</span></a>
+      <a href="#geraete"><span class="icon">▣</span><span>Und mehr</span></a>
+    </div>
+    <div class="slogan">Starke Projekte. Starke Region.<span></span></div>
+  </div>
+  <nav class="main-nav">
+    <a class="active" href="#start">⌂ <b>Startseite</b></a>
+    <a href="#geraete">⌕ <b>Geräte mieten</b></a>
+    <a href="#ablauf">⚙ <b>So funktioniert's</b></a>
+    <a href="#ueber-uns">♟ <b>Über uns</b></a>
+    <a href="#faq">? <b>FAQ</b></a>
+    <a href="#kontakt">✉ <b>Kontakt</b></a>
+    <span class="spacer"></span>
+    <button id="konto">♙ <b>Konto</b></button>
+    <button id="warenkorb">🛒 <span id="count">0</span></button>
+  </nav>
+</header>
+
+<main id="start">
+<section class="hero">
+  <div class="hero-copy">
+    <small>GERÄTEVERLEIH NORD-WEST</small>
+    <h1>Starke Projekte.<br>Starke Region.</h1>
+    <p>Hochwertige Geräte für Bau, Garten und mehr – einfach online mieten. Regional. Zuverlässig. Flexibel.</p>
+    <a class="cta" href="#geraete">JETZT GERÄTE MIETEN →</a>
+    <div class="trust"><span>▣ <b>Regionale Abholung</b><em>Schnell & unkompliziert</em></span><span>✓ <b>Faire Preise</b><em>Transparent & ehrlich</em></span><span>▦ <b>Flexibel mieten</b><em>Für Profis & Privatkunden</em></span></div>
+  </div>
+</section>
+
+<section class="search">
+  <input id="q" placeholder="Gerät suchen …">
+  <select id="cat"><option value="">Alle Kategorien</option><option>Baugeräte</option><option>Gartengeräte</option><option>Anhänger</option></select>
+  <input type="date">
+  <button class="cta" id="find">GERÄTE FINDEN →</button>
+</section>
+
+<section class="section" id="geraete">
+  <div class="section-head"><h2>Beliebte Geräte</h2><a href="#geraete">Alle Geräte anzeigen →</a></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="section light" id="ablauf">
+  <small>SO FUNKTIONIERT'S</small><h2>In wenigen Schritten zum Gerät.</h2>
+  <div class="steps"><div><b>01</b>Gerät auswählen</div><div><b>02</b>Zeitraum festlegen</div><div><b>03</b>Konto & Identität</div><div><b>04</b>Reservierung bestätigen</div></div>
+</section>
+
+<section class="section" id="ueber-uns"><small>ÜBER UNS</small><h2>Regional. Zuverlässig. Flexibel.</h2><p>Unkomplizierte Vermietung, transparente Preise und persönlicher Service in der Region.</p></section>
+
+<section class="section light" id="faq"><small>FAQ</small><h2>Häufige Fragen</h2>
+<details><summary>Wie funktioniert die Reservierung?</summary><p>Gerät und Zeitraum auswählen und Reservierungsanfrage abschicken.</p></details>
+<details><summary>Welche Kaution wird fällig?</summary><p>Die Kaution wird bei jedem Gerät transparent angezeigt.</p></details>
+</section>
+
+<section class="contact" id="kontakt"><div><small>KONTAKT</small><h2>Fragen zu einem Gerät?</h2><p>Wir helfen bei Gerät, Mietdauer und Reservierung.</p></div><a class="cta white" href="mailto:info@geraeteverleih-nord-west.de">✉ E-MAIL SCHREIBEN</a></section>
+</main>
+
 <footer>GERÄTEVERLEIH NORD-WEST · Regional. Zuverlässig. Flexibel.</footer>
-<div id="modal" class="modal" hidden><div class="box"><button id="close">×</button><div id="modalText"></div></div></div>
-<script src="script.js"></script></body></html>
+
+<div class="modal" id="modal" hidden><div class="modal-box"><button id="close">×</button><div id="modalText"></div></div></div>
+<script src="script.js"></script>
+</body></html>
